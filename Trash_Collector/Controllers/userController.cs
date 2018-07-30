@@ -18,7 +18,7 @@ namespace Trash_Collector.Controllers
             if (User.Identity.IsAuthenticated)
             {
                 var user = User.Identity;
-                ViewBag.Name = user.Name;
+                ViewBag.Name = user.GetUserName();
 
                 ViewBag.displayMenu = "No";
 

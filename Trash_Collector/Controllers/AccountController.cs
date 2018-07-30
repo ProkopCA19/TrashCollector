@@ -81,10 +81,16 @@ namespace Trash_Collector.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
-                    // if user.role == "Admin" 
-                    // return to a different page
-                    return RedirectToLocal(returnUrl);
-                    //return RedirectAdmin();
+                    // return RedirectToLocal(returnUrl);
+                    if (model.UserName == "Chelsea")
+                    {
+                        return RedirectAdmin();
+                    }
+                    else
+                    {
+                        return RedirectToLocal(returnUrl);
+                    }
+
                 case SignInStatus.LockedOut:
                     return View("Lockout");
                 case SignInStatus.RequiresVerification:
