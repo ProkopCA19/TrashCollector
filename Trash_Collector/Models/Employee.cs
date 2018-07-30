@@ -16,7 +16,15 @@ namespace Trash_Collector.Models
         public string FirstName { get; set; }
         [Display(Name ="Last Name")]
         public string LastName { get; set; }
-        [ForeignKey("ZipcodeId")]
+
+        [ForeignKey("Zipcode")]
+        public int ZipcodeID { get; set; }
         public Zipcode Zipcode { get; set; }
+
+        [ForeignKey("PickupDay")]
+        public int PickupID { get; set; }
+        public PickupDay PickupDay { get; set; }
+
+
     }
 }

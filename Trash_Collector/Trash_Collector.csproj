@@ -196,16 +196,36 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
+    <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PickupDaysController.cs" />
     <Compile Include="Controllers\roleController.cs" />
     <Compile Include="Controllers\userController.cs" />
+    <Compile Include="Controllers\ZipcodesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201807271546294_initialmigration.cs" />
     <Compile Include="Migrations\201807271546294_initialmigration.Designer.cs">
       <DependentUpon>201807271546294_initialmigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807301549547_secondMigration.cs" />
+    <Compile Include="Migrations\201807301549547_secondMigration.Designer.cs">
+      <DependentUpon>201807301549547_secondMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807301813340_secondMigration1.cs" />
+    <Compile Include="Migrations\201807301813340_secondMigration1.Designer.cs">
+      <DependentUpon>201807301813340_secondMigration1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807301831052_thirdMigration.cs" />
+    <Compile Include="Migrations\201807301831052_thirdMigration.Designer.cs">
+      <DependentUpon>201807301831052_thirdMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807301834597_thirdMigration1.cs" />
+    <Compile Include="Migrations\201807301834597_thirdMigration1.Designer.cs">
+      <DependentUpon>201807301834597_thirdMigration1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -280,6 +300,26 @@
     <Content Include="Views\user\Index.cshtml" />
     <Content Include="Views\role\Index.cshtml" />
     <Content Include="Views\role\Create.cshtml" />
+    <Content Include="Views\PickupDays\Create.cshtml" />
+    <Content Include="Views\PickupDays\Delete.cshtml" />
+    <Content Include="Views\PickupDays\Details.cshtml" />
+    <Content Include="Views\PickupDays\Edit.cshtml" />
+    <Content Include="Views\PickupDays\Index.cshtml" />
+    <Content Include="Views\Zipcodes\Create.cshtml" />
+    <Content Include="Views\Zipcodes\Delete.cshtml" />
+    <Content Include="Views\Zipcodes\Details.cshtml" />
+    <Content Include="Views\Zipcodes\Edit.cshtml" />
+    <Content Include="Views\Zipcodes\Index.cshtml" />
+    <Content Include="Views\Customers\Create.cshtml" />
+    <Content Include="Views\Customers\Delete.cshtml" />
+    <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Customers\Edit.cshtml" />
+    <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\Employees\Create.cshtml" />
+    <Content Include="Views\Employees\Delete.cshtml" />
+    <Content Include="Views\Employees\Details.cshtml" />
+    <Content Include="Views\Employees\Edit.cshtml" />
+    <Content Include="Views\Employees\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -300,6 +340,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201807271546294_initialmigration.resx">
       <DependentUpon>201807271546294_initialmigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807301549547_secondMigration.resx">
+      <DependentUpon>201807301549547_secondMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807301813340_secondMigration1.resx">
+      <DependentUpon>201807301813340_secondMigration1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807301831052_thirdMigration.resx">
+      <DependentUpon>201807301831052_thirdMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807301834597_thirdMigration1.resx">
+      <DependentUpon>201807301834597_thirdMigration1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

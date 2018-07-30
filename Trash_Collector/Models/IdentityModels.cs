@@ -30,5 +30,13 @@ namespace Trash_Collector.Models
             return new ApplicationDbContext();
         }
 
+        public System.Data.Entity.DbSet<Trash_Collector.Models.PickupDay> PickupDays { get; set; }
+
+        public System.Data.Entity.DbSet<Trash_Collector.Models.Zipcode> Zipcodes { get; set; }
+
+        public System.Data.Entity.DbSet<Trash_Collector.Models.Customer> Customers { get; set; }
+
+        public System.Data.Entity.DbSet<Trash_Collector.Models.Employee> Employees { get; set; }
+
     }
 }

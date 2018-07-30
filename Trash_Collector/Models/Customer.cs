@@ -10,27 +10,28 @@ namespace Trash_Collector.Models
     public class Customer
     {
         [Key]
-        public int customerID { get; set; }
+        public int CustomerID { get; set; }
         [Display(Name = "First Name")]
         public string FirstName { get; set; }
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
-        public string address { get; set; }
-        [ForeignKey("ZipcodeID")]
-        public Zipcode Zipcode { get; set; }
+        public string Address { get; set; }
         public string City { get; set; }
         public string State { get; set; }
+        public string Email { get; set;}
+        public double TrashBalance { get; set; }
 
-        [Display(Name = "Email")]
-        public string email { get; set;}
-        [ForeignKey("PickupID")]
-        [Display(Name = "Regular pickup day")]
-        public PickupDay PickupDay { get; set; }
-        [ForeignKey("PickupID")] 
-        [Display(Name = "Bonus pickup day")]
-        public PickupDay BonusPickupDay { get; set; }
+       
+        [ForeignKey("Zipcode")]
+        public int ZipcodeID { get; set; }
+        public Zipcode Zipcode { get; set; }
+       
+        [ForeignKey("PickupDay")]
+        public int PickupID { get; set; }
+        public PickupDay PickupDay{ get; set; }
 
-
+      
+        
 
 
 

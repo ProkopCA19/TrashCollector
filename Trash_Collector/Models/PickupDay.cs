@@ -10,6 +10,10 @@ namespace Trash_Collector.Models
     {
         [Key]
        public int PickupID { get; set; }
+       public double Charge { get; set; }
+       public string Name { get; set; }
+
+       
 
     }
 }
